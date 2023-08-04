@@ -338,10 +338,10 @@
                     </div>
                     <div class="form_simplex mx-auto mt-16 max-w-2xl lg:max-w-4xl">
                         <div class="form_simplex__opt">
-                            <label for="price" class="block text-sm font-medium leading-6 text-gray-900">
+                            <label for="MetodoSimplex" class="block text-sm font-medium leading-6 text-gray-900">
                                 Metodo
                             </label>
-                            <select class="form-select relative mt-2 rounded-md shadow-sm"
+                            <select id="MetodoSimplex" class="form-select relative mt-2 rounded-md shadow-sm"
                                 aria-label="Default select example">
                                 <option value="1" selected>Metodo Simplex</option>
                                 <option value="2">Metodo de Dos Fases</option>
@@ -349,31 +349,31 @@
                             </select>
                         </div>
                         <div class="form_simplex__opt">
-                            <label for="price" class="block text-sm font-medium leading-6 text-gray-900">
+                            <label for="ObjetivoSimplex" class="block text-sm font-medium leading-6 text-gray-900">
                                 Objetivo
                             </label>
-                            <select class="form-select relative mt-2 rounded-md shadow-sm"
-                                aria-label="Default select example">
-                                <option value="1" selected>Maximizar</option>
-                                <option value="2">Minimizar</option>
+                            <select id="ObjetivoSimplex" class="form-select relative mt-2 rounded-md shadow-sm"
+                                aria-label="Default select example" >
+                                <option value="max" selected>Maximizar</option>
+                                <option value="min">Minimizar</option>
                             </select>
                         </div>
                         <div class="form_simplex__variable">
-                            <label for="price" class="block number-sm font-medium leading-6 number-gray-900">
+                            <label for="CtdVariables" class="block number-sm font-medium leading-6 number-gray-900">
                                 Cantidad de Variables
                             </label>
                             <div class="relative mt-2 rounded-md shadow-sm">
-                                <input type="number" name="variable" id="variable"
+                                <input type="number" name="variable" id="CtdVariables"
                                     class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 number-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     placeholder="0.00">
                             </div>
                         </div>
                         <div class="form_simplex__restric">
-                            <label for="price" class="block number-sm font-medium leading-6 number-gray-900">
+                            <label for="ctdRestric" class="block number-sm font-medium leading-6 number-gray-900">
                                 Cantidad de Restriciones
                             </label>
                             <div class="relative mt-2 rounded-md shadow-sm">
-                                <input type="number" name="restric" id="restric"
+                                <input type="number" name="restric" id="ctdRestric"
                                     class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 number-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     placeholder="0.00">
                             </div>
