@@ -40,6 +40,13 @@
           .table_formulacion {
                width: 30em;
                table{
+                    .table-purple{
+                         th{
+                              background-color: var(--purple);
+                              color: var(--lite);
+                              font-weight: 600;
+                         }
+                    }
                     th, td{
                          .table-input{
                               width: 1em;
