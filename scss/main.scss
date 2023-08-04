@@ -1,0 +1,58 @@
+@import 'texto';
+
+.conteiner {
+     .contenido {
+          header {
+               .header-nav {
+                    .header-nav_logo {
+                         .logo__red {
+                              color: var(--purple);
+                              ;
+                         }
+                    }
+               }
+          }
+
+          .form_simplex {
+               width: 40em;
+               display: grid;
+               grid-template-columns: repeat(2, auto);
+               grid-gap: 12px;
+               align-items: end;
+               grid-template: "metodo sig"
+                    "variables restric "
+                    "button button";
+
+               .form_simplex__btn {
+                    grid-area: button;
+
+                    a {
+                         font-size: 1.05em;
+                         height: 1.5em;
+                         width: 6em;
+                         display: grid;
+                         align-items: center;
+                         justify-content: center;
+                    }
+               }
+          }
+
+          .table_formulacion {
+               width: 30em;
+               table{
+                    th, td{
+                         .table-input{
+                              width: 1em;
+                              display: inline;
+                         }
+                         span{
+                              font-size:0.9em;
+                              position: relative;
+                              top: 5px;
+                         }
+                    }
+                    
+               }
+          }
+     }
+}

@@ -1,0 +1,46 @@
+:root {
+  --background-black: #212121;
+  --background-lite: #212121;
+  --black: #f3f4f6;
+  --white: #fff;
+  --purple: #4f46e5;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+}
+
+.conteiner .contenido header .header-nav .header-nav_logo .logo__red {
+  color: var(--purple);
+}
+.conteiner .contenido .form_simplex {
+  width: 40em;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 12px;
+  align-items: end;
+  grid-template: "metodo sig" "variables restric " "button button";
+}
+.conteiner .contenido .form_simplex .form_simplex__btn {
+  grid-area: button;
+}
+.conteiner .contenido .form_simplex .form_simplex__btn a {
+  font-size: 1.05em;
+  height: 1.5em;
+  width: 6em;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.conteiner .contenido .table_formulacion {
+  width: 30em;
+}
+.conteiner .contenido .table_formulacion table th .table-input, .conteiner .contenido .table_formulacion table td .table-input {
+  width: 1em;
+  display: inline;
+}
+.conteiner .contenido .table_formulacion table th span, .conteiner .contenido .table_formulacion table td span {
+  font-size: 0.9em;
+  position: relative;
+  top: 5px;
+}/*# sourceMappingURL=main.css.map */
