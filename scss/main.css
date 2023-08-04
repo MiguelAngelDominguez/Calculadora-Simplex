@@ -1,8 +1,9 @@
 :root {
   --background-black: #212121;
-  --background-lite: #212121;
-  --black: #f3f4f6;
+  --background-lite: #f3f4f6;
+  --black: #212121;
   --white: #fff;
+  --lite: #f3f4f6;
   --purple: #4f46e5;
   --regular: 400;
   --medium: 500;
@@ -34,6 +35,11 @@
 }
 .conteiner .contenido .table_formulacion {
   width: 30em;
+}
+.conteiner .contenido .table_formulacion table .table-purple th {
+  background-color: var(--purple);
+  color: var(--lite);
+  font-weight: 600;
 }
 .conteiner .contenido .table_formulacion table th .table-input, .conteiner .contenido .table_formulacion table td .table-input {
   width: 1em;
