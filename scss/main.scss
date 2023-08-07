@@ -61,5 +61,33 @@
                     
                }
           }
+          .box-contain-example{
+               height: 40em;
+               overflow: auto;
+          }
+          .footer-center{
+               margin: 0 auto;
+               h2, h4, p{
+                    text-align: center;
+               }
+          }
+          .max-w-2xl {
+               max-width: 90rem;
+           }
+          .footer-new{
+               background-color: rgba(78, 70, 229, 0.25) !important;
+               padding: 4rem 0;
+          }
+          ul.simplex{
+               margin-left: 2em;
+               list-style: inside;
+          }
+          .svg-simplex{
+               display: flex;
+
+               .svg-numbers{
+                    margin-right: 1rem;
+               }
+          }
      }
 }

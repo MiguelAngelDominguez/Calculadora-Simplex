@@ -49,4 +49,31 @@
   font-size: 0.9em;
   position: relative;
   top: 5px;
+}
+.conteiner .contenido .box-contain-example {
+  height: 40em;
+  overflow: auto;
+}
+.conteiner .contenido .footer-center {
+  margin: 0 auto;
+}
+.conteiner .contenido .footer-center h2, .conteiner .contenido .footer-center h4, .conteiner .contenido .footer-center p {
+  text-align: center;
+}
+.conteiner .contenido .max-w-2xl {
+  max-width: 90rem;
+}
+.conteiner .contenido .footer-new {
+  background-color: rgba(78, 70, 229, 0.25) !important;
+  padding: 4rem 0;
+}
+.conteiner .contenido ul.simplex {
+  margin-left: 2em;
+  list-style: inside;
+}
+.conteiner .contenido .svg-simplex {
+  display: flex;
+}
+.conteiner .contenido .svg-simplex .svg-numbers {
+  margin-right: 1rem;
 }/*# sourceMappingURL=main.css.map */
