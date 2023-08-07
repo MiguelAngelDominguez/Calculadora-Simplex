@@ -41,11 +41,13 @@
   color: var(--lite);
   font-weight: 600;
 }
-.conteiner .contenido .table_formulacion table th .table-input, .conteiner .contenido .table_formulacion table td .table-input {
+.conteiner .contenido .table_formulacion table th .table-input,
+.conteiner .contenido .table_formulacion table td .table-input {
   width: 1em;
   display: inline;
 }
-.conteiner .contenido .table_formulacion table th span, .conteiner .contenido .table_formulacion table td span {
+.conteiner .contenido .table_formulacion table th span,
+.conteiner .contenido .table_formulacion table td span {
   font-size: 0.9em;
   position: relative;
   top: 5px;
@@ -57,11 +59,10 @@
 .conteiner .contenido .footer-center {
   margin: 0 auto;
 }
-.conteiner .contenido .footer-center h2, .conteiner .contenido .footer-center h4, .conteiner .contenido .footer-center p {
+.conteiner .contenido .footer-center h2,
+.conteiner .contenido .footer-center h4,
+.conteiner .contenido .footer-center p {
   text-align: center;
-}
-.conteiner .contenido .max-w-2xl {
-  max-width: 90rem;
 }
 .conteiner .contenido .footer-new {
   background-color: rgba(78, 70, 229, 0.25) !important;
