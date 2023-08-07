@@ -39,53 +39,65 @@
 
           .table_formulacion {
                width: 30em;
-               table{
-                    .table-purple{
-                         th{
+
+               table {
+                    .table-purple {
+                         th {
                               background-color: var(--purple);
                               color: var(--lite);
                               font-weight: 600;
                          }
                     }
-                    th, td{
-                         .table-input{
+
+                    th,
+                    td {
+                         .table-input {
                               width: 1em;
                               display: inline;
                          }
-                         span{
-                              font-size:0.9em;
+
+                         span {
+                              font-size: 0.9em;
                               position: relative;
                               top: 5px;
                          }
                     }
-                    
+
                }
           }
-          .box-contain-example{
+
+          .box-contain-example {
                height: 40em;
                overflow: auto;
           }
-          .footer-center{
+
+          .footer-center {
                margin: 0 auto;
-               h2, h4, p{
+
+               h2,
+               h4,
+               p {
                     text-align: center;
                }
           }
-          .max-w-2xl {
-               max-width: 90rem;
-           }
-          .footer-new{
+
+          // .max-w-2xl {
+          //      max-width: 90rem;
+          // }
+          .footer-new {
                background-color: rgba(78, 70, 229, 0.25) !important;
                padding: 4rem 0;
           }
-          ul.simplex{
+
+          ul.simplex {
                margin-left: 2em;
                list-style: inside;
           }
-          .svg-simplex{
+
+          .svg-simplex {
                display: flex;
 
-               .svg-numbers{
+               .svg-numbers {
                     margin-right: 1rem;
                }
           }
