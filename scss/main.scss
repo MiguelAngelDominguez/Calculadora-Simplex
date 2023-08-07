@@ -2,7 +2,15 @@
 
 .conteiner {
      .contenido {
+          .header{
+               position: sticky;
+               top: 0;
+               z-index: 100;
+               background-color: var(--lite-tranparent) !important;
+               backdrop-filter: blur(4px);
+          }
           header {
+               
                .header-nav {
                     .header-nav_logo {
                          .logo__red {
