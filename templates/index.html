@@ -471,14 +471,13 @@
                 <div class="lg:pr-4">
                   <div class="lg:max-w-lg">
                     <p class="text-base font-semibold leading-7 text-indigo-600">
-                      New Section
+                      Funcionamiento de la calculadora SIMPROX
                     </p>
                     <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                       ¿Cómo funciona?
                     </h1>
                     <p class="mt-6 text-xl leading-8 text-gray-700">
-                      Para la resolución de los problemas de programación lineal hacemos uso del <strong>método
-                        simplex</strong>.
+                      La calculadora de <strong>SIM<span style="color: rgb(79, 70, 229);">PRO</span>X</strong> hace uso del <strong>método simplex</strong> para la resolución de los problemas de programación lineal.
                     </p>
                   </div>
                 </div>
@@ -504,7 +503,8 @@
                       Paso 1: Formulación del Problema
                     </h3>
                     <ul class="simplex">
-                      <li>Identificamos las variables de decisión que representan las cantidades desconocidas que queremos encontrar.</li>
+                      <li>Identificamos las variables de decisión que representan las cantidades desconocidas que
+                        queremos encontrar.</li>
                       <li>Definimos nuestra función objetivo ya sea maximizar o minimizar en terminos de las variables
                         de decisión.</li>
                       <li>Establecemos las restricciones, limitaciones o condiciones que deben de cumplirse, expresadas
@@ -513,7 +513,7 @@
                         <img src="/images/step-2.jpg" alt="" />
                       </div>
                     </ul>
-                    
+
                     <h3 class="svg-simplex mt-3 text-base font-semibold leading-7 tracking-tight text-gray-900">
                       <svg class="svg-numbers mt-1 h-5 w-5 flex-none text-indigo-600" xmlns="http://www.w3.org/2000/svg"
                         width="16" height="16" fill="currentColor" class="bi bi-2-circle-fill" viewBox="0 0 16 16">
@@ -526,14 +526,18 @@
                       <li>Escogemos el método a usar para la resolución del problema</li>
                       <li>Definimos nuestro objetivo (Maximizar-Minimizar)</li>
                       <li>Digitamos el número de las variables y restriciones</li>
-                      <li>Damos click en el botón de <strong>Generar</strong></li>
                       <div>
                         <img src="/images/step-3.jpg" alt="" />
                       </div>
+                      <li>Damos click en el botón de <strong>Generar</strong></li>
                       <li>Ingresamos los datos correpondientes en la función objetivo y las restricciones</li>
-                      <li>Damos click en el botón de <strong>Solucionar</strong> para obtener nuestra tabla de iteraciones</li>
                       <div>
-                        <img src="/images/step-32.jpg" alt="" />
+                        <img src="/images/step-4.jpg" alt="" />
+                      </div>
+                      <li>Damos click en el botón de <strong>Solucionar</strong> para obtener nuestra tabla de
+                        iteraciones</li>
+                      <div>
+                        <img src="/images/step-5.jpg" alt="" />
                       </div>
                     </ul>
                     <h3 class="svg-simplex text-base font-semibold leading-7 tracking-tight text-gray-900">
@@ -545,9 +549,14 @@
                       Paso 3: Iteraciones hasta encontrar la solución
                     </h3>
                     <ul class="simplex">
-                      <li>Convertimos el problema en una forma estándar, que es una forma es</li>
-                      <li>Escribimos la función objetivo </li>
-                      <li>Establecer las restricciones</li>
+                      <li>Se escoge el columan de la tabla de acuerdo al Cj-Zj</li>
+                      <li>Se divide el bi entre la columna escogida para obtener el θi</li>
+                      <li>Se escoge la fila que contenga el menor θi</li>
+                      <li>La intersección de la fila y la columna escogida se define como el <strong>pivot</strong> y números adyacentes de la columna son los semipivots.</li>
+                      <div>
+                        <img src="/images/step-6.jpg" alt="" />
+                      </div>
+                      <li>Damos click en continuar para que la calculadora repita el proceso hasta llegar a la última iteración</li>
                     </ul>
                     <h3 class="svg-simplex text-base font-semibold leading-7 tracking-tight text-gray-900">
                       <svg class="svg-numbers mt-1 h-5 w-5 flex-none text-indigo-600" xmlns="http://www.w3.org/2000/svg"
@@ -558,81 +567,17 @@
                       Paso 4: Interpretación de la solución
                     </h3>
                     <ul class="simplex">
-                      <li>Convertimos el problema en una forma estándar, que es una forma es</li>
-                      <li>Escribimos la función objetivo </li>
-                      <li>Establecer las restricciones</li>
+                      <li>Llegados al último tablero/iteración, interpretamos la solución</li>
+                      <div>
+                        <img src="/images/step-7.jpg" alt="" />
+                      </div>
+                      <li>La columna Xb indica nuestras variables básicas </li>
+                      <li>La columna Ci indica la cantidad de variables Xi que necesitamos para la función objetivo</li>
+                      <li>La columna Bi indica el valor de nuestras variables</li>
+                      <li>Las variables que no son básicas toman el valor de cero</li>
+                      <li>El número ubicado en la esquina inferior derecha nos indica el valor final de nuestra función objetivo</li>
+                      <li>Obtenemos también los valores sombra, e inclusive podemos usar esta tabla para pasar nuestro tablero del <strong>Primal al Dual.</strong></li> Esto para posteriormente aplicar un <strong>análisis de sensibilidad.</strong>
                     </ul>
-                    <!-- <p>
-                      Texto2-Texto2-Texto2-Texto2-Texto2-Texto2- Faucibus
-                      commodo massa rhoncus, volutpat. Dignissim sed eget
-                      risus enim. Mattis mauris semper sed amet vitae sed
-                      turpis id. Id dolor praesent donec est. Odio penatibus
-                      risus viverra tellus varius sit neque erat velit.
-                      Faucibus commodo massa rhoncus, volutpat. Dignissim sed
-                      eget risus enim. Mattis mauris semper sed amet vitae sed
-                      turpis id.
-                    </p>
-                    <ul role="list" class="mt-8 space-y-8 text-gray-600">
-                      <li class="flex gap-x-3">
-                        <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
-                          aria-hidden="true">
-                          <path
-                            d="M10.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
-                          <path fill-rule="evenodd"
-                            d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
-                            clip-rule="evenodd" />
-                        </svg>
-                        <span><strong class="font-semibold text-gray-900">Subtitle 1</strong>
-                          Lorem ipsum, dolor sit amet consectetur adipisicing
-                          elit. Maiores impedit perferendis suscipit eaque,
-                          iste dolor cupiditate blanditiis ratione.</span>
-                      </li>
-                      <li class="flex gap-x-3">
-                        <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
-                          aria-hidden="true">
-                          <path fill-rule="evenodd"
-                            d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
-                            clip-rule="evenodd" />
-                        </svg>
-                        <span><strong class="font-semibold text-gray-900">Subtitle 2</strong>
-                          Anim aute id magna aliqua ad ad non deserunt sunt.
-                          Qui irure qui lorem cupidatat commodo.</span>
-                      </li>
-                      <li class="flex gap-x-3">
-                        <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
-                          aria-hidden="true">
-                          <path
-                            d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
-                          <path fill-rule="evenodd"
-                            d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
-                            clip-rule="evenodd" />
-                        </svg>
-                        <span><strong class="font-semibold text-gray-900">Subtitle 3</strong>
-                          Ac tincidunt sapien vehicula erat auctor
-                          pellentesque rhoncus. Et magna sit morbi
-                          lobortis.</span>
-                      </li>
-                    </ul>
-                    <p class="mt-8">
-                      Et vitae blandit facilisi magna lacus commodo. Vitae
-                      sapien duis odio id et. Id blandit molestie auctor
-                      fermentum dignissim. Lacus diam tincidunt ac cursus in
-                      vel. Mauris varius vulputate et ultrices hac adipiscing
-                      egestas. Iaculis convallis ac tempor et ut. Ac lorem vel
-                      integer orci.
-                    </p>
-                    <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                      No server? No problem.
-                    </h2>
-                    <p class="mt-6">
-                      Id orci tellus laoreet id ac. Dolor, aenean leo, ac
-                      etiam consequat in. Convallis arcu ipsum urna nibh.
-                      Pharetra, euismod vitae interdum mauris enim, consequat
-                      vulputate nibh. Maecenas pellentesque id sed tellus
-                      mauris, ultrices mauris. Tincidunt enim cursus ridiculus
-                      mi. Pellentesque nam sed nullam sed diam turpis ipsum eu
-                      a sed convallis diam.
-                    </p> -->
                   </div>
                 </div>
               </div>
@@ -661,8 +606,7 @@
             <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-3 sm:gap-y-16 xl:col-span-2">
               <li>
                 <div class="flex items-center gap-x-6">
-                  <img class="h-24 w-24 rounded-full"
-                    src="/images/MiguelFace.jpg" alt="" />
+                  <img class="h-24 w-24 rounded-full" src="/images/MiguelFace.jpg" alt="" />
                   <div>
                     <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
                       Dominguez Miguel
@@ -675,8 +619,7 @@
               </li>
               <li>
                 <div class="flex items-center gap-x-6">
-                  <img class="h-24 w-24 rounded-full"
-                    src="/images/JohanFace.jpg" alt="" />
+                  <img class="h-24 w-24 rounded-full" src="/images/JohanFace.jpg" alt="" />
                   <div>
                     <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
                       Noreña Johan
@@ -689,14 +632,13 @@
               </li>
               <li>
                 <div class="flex items-center gap-x-6">
-                  <img class="h-24 w-24 rounded-full"
-                    src="/images/JorgeFace.jpg" alt="" />
+                  <img class="h-24 w-24 rounded-full" src="/images/JorgeFace.jpg" alt="" />
                   <div>
                     <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
                       Melgarejo Jorge
                     </h3>
                     <p class="text-sm font-semibold leading-6 text-indigo-600">
-                      Fronted-Developer
+                      UI-UX/ Fronted-Developer
                     </p>
                   </div>
                 </div>
