@@ -60,9 +60,6 @@
 .conteiner .contenido .footer-center h2, .conteiner .contenido .footer-center h4, .conteiner .contenido .footer-center p {
   text-align: center;
 }
-.conteiner .contenido .max-w-2xl {
-  max-width: 90rem;
-}
 .conteiner .contenido .footer-new {
   background-color: rgba(78, 70, 229, 0.25) !important;
   padding: 4rem 0;
