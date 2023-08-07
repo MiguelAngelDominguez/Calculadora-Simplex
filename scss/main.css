@@ -33,6 +33,23 @@
   align-items: center;
   justify-content: center;
 }
+.conteiner .contenido .table_form {
+  width: 30em;
+}
+.conteiner .contenido .table_form table tr, .conteiner .contenido .table_form table td {
+  display: flex;
+}
+.conteiner .contenido .table_form table td {
+  display: flex;
+  align-items: center;
+}
+.conteiner .contenido .table_form table td .inputForm {
+  width: 7em;
+  padding-inline: 1em;
+}
+.conteiner .contenido .table_form table td div {
+  margin-inline: 0.3em;
+}
 .conteiner .contenido .table_formulacion {
   width: 30em;
 }

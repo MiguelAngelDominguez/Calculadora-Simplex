@@ -37,6 +37,28 @@
                }
           }
 
+          .table_form {
+               width: 30em;
+
+               table {
+                    tr,td{
+                         display: flex;
+                    }
+                    td{
+                         display: flex;
+                         align-items: center;
+                         .inputForm {
+                              width: 7em;
+                              padding-inline: 1em;
+                              
+                         }
+                         div{
+                              margin-inline: 0.3em;
+                         }
+                    }
+               }
+          }
+
           .table_formulacion {
                width: 30em;
 
@@ -61,6 +83,7 @@
                               position: relative;
                               top: 5px;
                          }
+
                     }
 
                }
