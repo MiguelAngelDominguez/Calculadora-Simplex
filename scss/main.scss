@@ -2,15 +2,16 @@
 
 .conteiner {
      .contenido {
-          .header{
+          .header {
                position: sticky;
                top: 0;
                z-index: 100;
                background-color: var(--lite-tranparent) !important;
                backdrop-filter: blur(4px);
           }
+
           header {
-               
+
                .header-nav {
                     .header-nav_logo {
                          .logo__red {
@@ -45,21 +46,26 @@
           }
 
           .table_form {
-               width: 30em;
+               width: max-content;
 
                table {
-                    tr,td{
+
+                    tr,
+                    td {
                          display: flex;
                     }
-                    td{
+
+                    td {
                          display: flex;
                          align-items: center;
+
                          .inputForm {
                               width: 7em;
                               padding-inline: 1em;
-                              
+
                          }
-                         div{
+
+                         div {
                               margin-inline: 0.3em;
                          }
                     }
@@ -110,7 +116,8 @@
                     text-align: center;
                }
           }
-          .footer-new{
+
+          .footer-new {
                background-color: rgba(78, 70, 229, 0.25) !important;
                padding: 4rem 0;
           }

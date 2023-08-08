@@ -178,31 +178,100 @@ function captionDates() {
     // return c,A,b;
 }
 
+function encontrarIndiceMayor(array) {
+    const indiceMayor = array.reduce((indiceMax, numeroActual, indiceActual, array) => {
+        if (numeroActual > array[indiceMax]) {
+            return indiceActual;
+        } else {
+            return indiceMax;
+        }
+    }, 0);
+
+    return indiceMayor;
+}
+
+function encontrarIndiceMenor(array) {
+    const indiceMenor = array.reduce((indiceMin, numeroActual, indiceActual, array) => {
+        if (numeroActual < array[indiceMin]) {
+            return indiceActual;
+        } else {
+            return indiceMin;
+        }
+    }, 0);
+
+    return indiceMenor;
+}
+
+var zIndex = [];
+var biIndex = [];
+
 function imprimirTablaIteracion(iteration) {
     const numRows = iteration.length;
     const numCols = iteration[0].length;
+
+    const ctdVariables = document.getElementById("CtdVariables").value
 
     let tableHTML = '<table class="table table-hover">';
     tableHTML += '<thead class="table-purple">';
     tableHTML += '<tr>';
     tableHTML += '<th scope="col">Xb</th>';
-    tableHTML += '<th scope="col">Ci</th>';
-    for (let j = 0; j < numCols - 2; j++) {
-        tableHTML += `<th scope="col">X${j + 1}</th>`;
+    tableHTML += '<th scope="col">X1</th>';
+    tableHTML += '<th scope="col">X2</th>';
+
+    for (let j = 0; j < numCols - 3; j++) {
+        tableHTML += `<th scope="col">${(numCols - 3) / 2 < j ? 'X' + (j + 1) : 'S' + (j + 1)}</th>`;
     }
+
     tableHTML += '<th scope="col">Bi</th>';
     tableHTML += '</tr>';
     tableHTML += '</thead>';
     tableHTML += '<tbody>';
-
-    for (let i = 0; i < numRows; i++) {
+    let pivot= true
+    for (let i = 0; i < numRows - 1; i++) {
         tableHTML += '<tr>';
-        tableHTML += `<th scope="row">S${i + 1}</th>`;
+        const zI = encontrarIndiceMenor(zIndex);
+        console.log("mi vZ: " + zI);
+        const biI = encontrarIndiceMayor(biIndex);
+        console.log("mi vBi: " + biI);
+        console.log("rpta if 1 : " + (biI == i && biI >0 || pivot== true));
+        if(biI == i || pivot== true){
+            console.log("primer caso");
+            tableHTML += `<th scope="row">${zI == 0 ? 'S' + (i+1)  : 'X' + (i + 1)}</th>`;
+            if (i != 0){
+                pivot = false;
+            }
+            console.log(pivot);
+        }else{
+            console.log("segundo caso");
+            tableHTML += `<th scope="row">${zI == 0 ? 'X' + (i + 1) : 'S' + (i+1) }</th>`;
+            if(i%2 ==0){
+                pivot = true;
+            }
+            console.log(pivot);
+        }
+
         for (let j = 0; j < numCols; j++) {
+            
             tableHTML += `<td>${iteration[i][j]}</td>`;
+            if (j + 1 == numCols) {
+                biIndex.push(iteration[i][j]);
+            }
         }
         tableHTML += '</tr>';
     }
+    console.log(biIndex);
+
+    // Imprimir la última fila con la variable "Z"
+    tableHTML += '<tr>';
+    tableHTML += '<th scope="row">Z</th>';
+    for (let j = 0; j < numCols; j++) {
+        tableHTML += `<td>${iteration[numRows - 1][j]}</td>`;
+        if (j < ctdVariables) {
+            zIndex.push(iteration[numRows - 1][j]);
+        }
+    }
+    console.log(zIndex);
+    tableHTML += '</tr>';
 
     tableHTML += '</tbody>';
     tableHTML += '</table>';
