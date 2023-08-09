@@ -15,10 +15,10 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
     <style type="text/tailwindcss">
         @layer utilities {
-        .content-auto {
-          content-visibility: auto;
+            .content-auto {
+                content-visibility: auto;
+            }
         }
-      }
     </style>
     <title>Calculadora Simplex</title>
 </head>
@@ -116,7 +116,7 @@
                     </div>
                     <div id="calculator" class="form_simplex mx-auto mt-16 max-w-2xl lg:max-w-4xl">
                         <div class="form_simplex__opt">
-                            <label for="MetodoSimplex" class="block text-sm font-medium leading-6 text-gray-900" >
+                            <label for="MetodoSimplex" class="block text-sm font-medium leading-6 text-gray-900">
                                 Metodo
                             </label>
                             <select id="MetodoSimplex" class="form-select relative mt-2 rounded-md shadow-sm" disabled
@@ -351,7 +351,8 @@
                                             <li>Se escoge la fila que contenga el menor θi</li>
                                             <li>La intersección de la fila y la columna escogida se define como el
                                                 <strong>pivot</strong> y
-                                                números adyacentes de la columna son los semipivots.</li>
+                                                números adyacentes de la columna son los semipivots.
+                                            </li>
                                             <div>
                                                 <img src="/images/step-6.jpg" alt="" />
                                             </div>
@@ -470,4 +471,5 @@
     };
 </script>
 <script src="/scripts/main.js"></script>
+
 </html>
